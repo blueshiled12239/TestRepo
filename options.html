@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ask ChatGPT Options</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="options-page">
+  <h1>Ask ChatGPT Options</h1>
+  <form id="options-form">
+    <label>
+      OpenAI API Key
+      <input type="password" id="api-key" placeholder="sk-..." autocomplete="off" />
+    </label>
+    <label class="checkbox">
+      <input type="checkbox" id="auto-send" /> Auto-send on selection
+    </label>
+    <div class="actions">
+      <button type="submit">Save</button>
+      <span id="status" role="status" aria-live="polite"></span>
+    </div>
+  </form>
+  <p class="note">Your settings sync across Firefox profiles signed into the same account.</p>
+  <script src="options.js"></script>
+</body>
+</html>
